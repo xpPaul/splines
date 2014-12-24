@@ -16,4 +16,9 @@ Spline support following operations:
 
 See include\splines\user.txt for more details.
 
-See demos\splines_demo for usage sample.
+See demos\splines_demo for usage sample
+
+![bspline with arclength and closest point](https://raw.github.com/xpPaul/splines/master/splines_shots/bspline_arclength_closestpoint.png)
+![bspline with derivatives](https://raw.github.com/xpPaul/splines/master/splines_shots/bspline_derivatives.png)
+![catmullrom with curvature](https://raw.github.com/xpPaul/splines/master/splines_shots/catmullrom_cuvature.png)
+![hermite with frenetframe](https://raw.github.com/xpPaul/splines/master/splines_shots/hermite_frenetframe.png)
