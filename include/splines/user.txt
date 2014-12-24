@@ -1,0 +1,33 @@
+Spline types:
+	Hermite, Catmull-Rom, Bezier 3, Bezier N, B-spline
+	todo: Korchanek-Bartels
+	todo: natural spline (cubic C2 interpolation spline)
+	todo: closed variants
+	todo: NURRBS
+
+Spline functions:
+	origin()
+	ending()
+	operator()(t)
+	derivative<K>(t)
+
+	curvature(t)
+	radius(t)
+	torsion(t)
+	torsion_radius(t)
+	direction(t)
+	normal(t)
+	binormal(t)
+
+	approximate(accuracy,outPts)
+
+	t2s(t)
+	s2t(s)
+	length()
+	length(t_from, t_to)
+
+	distance(pt, accuracy, out t)
+	closest_point(pt, accuracy)
+	todo: get_aabb(out min, out max)
+	todo: get_hull(out pts)             // 2d only
+	todo: intersect(pt0, pt1, accuracy) // 2d only

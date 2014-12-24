@@ -1,0 +1,7 @@
+dependencies:
+  Qt
+  include (math/point2.h, gui/glwidget, splines)
+
+usage:
+  double click to add point
+  drag to move point

@@ -1,0 +1,19 @@
+table-based arclength
+grid-based and aabb-tree-based localization
+NURBS + builder
+
+Design proposals:
+	1) move operations and functions from gsl::details to traits
+		reason: different types can be used interpolated with spline, not only point_2,point_3
+		code: gslaux.h, all other
+	2) make free functions: approximate, curvature, radius, torsion, torsion_radius, direction, normal, binormal
+		reason: this functions based on public methods, if other implementations of segment will appear (e.g. nurbs) no duplication or additional decorator will required
+		code: segment.h, spline.h
+	3) segments_connected_verification_traits should not compare points, but segments at all
+		reason: ability to provide Cn or Gn segments continiously
+		code: spline.h
+	4) segments_connected_verification_traits should be generalized to spline_traits (or even spline_policy)
+		reason: some other traits required for spline (e.g. verify_strategy, extrapolation_strategy, get_parametrization_accuracy, get_localization_accuracy)
+	5) verify should work only if enabled (move it to traits)
+		reason: perfomance
+		code: spline.h
